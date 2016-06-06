@@ -1,5 +1,7 @@
 """
-A script that determines whether or not a number is prime.
+A script that determines whether or not a number is prime. To run this script,
+navigate to the directory that stores this script and type:
+python primes.py
 """
 
 
