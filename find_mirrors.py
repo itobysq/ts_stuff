@@ -24,7 +24,7 @@ def find_mirrors(in_file, out_file):
         else:
             if previous_line == line[::-1]:
                 if previous_line != previous_line[::-1]:
-                    out_file.write(previous_line + '/' + line + '\n')
+                    out_file.write(previous_line + ', ' + line + '\n')
 
             previous_line = line
 
