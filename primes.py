@@ -1,13 +1,13 @@
 """
-A script that determines whether or not a number is prime
+A script that determines whether or not a number is prime.
 """
 
 
 def is_prime(n):
     """
     Determines whether a number is prime.
-    :param n:
-    :return:
+    :param n: A positive integer.
+    :return: A message stating whether or not the number is prime.
     """
     true_msg = str(n) + ' is prime'
     false_msg = str(n) + ' is not prime'
@@ -18,7 +18,7 @@ def is_prime(n):
     if n % 2 == 0:
         return false_msg
     if n % 3 == 0:
-        return true_msg
+        return false_msg
 
     k = 5
     x = 2
@@ -32,9 +32,9 @@ def is_prime(n):
     return true_msg
 
 if __name__ == '__main__':
-    number = raw_input('Please enter a positive integer: ')
+    number_in = raw_input('Please enter a positive integer: ')
 try:
-    number = int(number)
-    print(is_prime(number))
+    number_in = int(number_in)
+    print(is_prime(number_in))
 except ValueError:
     print('Enter an integer and try again')
